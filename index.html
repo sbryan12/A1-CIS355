@@ -59,7 +59,7 @@
         </section>
     </main>
     <footer class="contact" id="contact">
-        <h1 class="contact-h1">Contact us here</h1>
+        <h1 class="contact-h1">Contact Us Here</h1>
         <div class="links">
             <div class="contact-link">
                 <img src="gmail-email-logo-icon-free-png.png" alt=" gmail logo" class="linked-logo">
@@ -175,6 +175,14 @@
             line-height: 1.2;
             text-decoration: none;
         }
+        .nav-bar a:hover{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        .nav-links.open a:hover{
+                background-color: cornflowerblue;
+                color: black;
+        }
         .hamburger{
             display: none;
             flex-direction: column;
@@ -231,7 +239,7 @@
         }
         .services{
             grid-area: services;
-            background-color: #535252;
+            background-color: #d8d8d8;
         }
         .testimonial_section{
             grid-area: testimonial;
@@ -276,6 +284,10 @@
             border-radius: 10px;
             border: 3px solid #d63384;
             box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .service-card:hover{
+            background-color: cornflowerblue;
         }
         .services-h1{
             text-align: center;
@@ -292,11 +304,12 @@
         footer{
             grid-area: footer;
             margin-top: 50px;
-            background-color: #dbdbdb;
+            background-color: #d8d8d8;
             padding-bottom: 35px;
         }
         .contact-h1{
             text-align: center;
+            color: #d63384;
         }
         .links{
             display: flex;
@@ -324,8 +337,11 @@
             text-decoration: none;
             font-size: 1.2rem;
         }
-
-        /* media queries */
+        .contact-link a:hover{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        /* media queries for mobile */
         @media (max-width: 600px) {
             .hamburger{
                 display: flex;
@@ -343,7 +359,7 @@
                 gap: 10px;
                 z-index: 100;
             }
-
+            
             .nav-links.open{
                 display: flex;
             }
@@ -372,13 +388,9 @@
             .service-card{
                   flex: 0 0 100%;
             }
+            
         }
-        /* for inbetween phone and laptop */
-        @media  (max-width: 900px){
-            #services_container{
-                  flex: 0 0 calc(50% - 10px);
-            }
-        }
+        
     </style>
 </body>
 </html>
